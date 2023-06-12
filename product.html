@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
                 <a class="navbar-logo" href="#">
                     <img src="img/logo_header.png" alt="logo">
                 </a>
@@ -74,24 +74,28 @@
                         </li> -->
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb es-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Меню</a></li>
+                    <li class="breadcrumb-item"><a href="#">Категория</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Название товара</li>
+                </ol>
+            </nav>
+        </div>
+        <section class="product-info sections-wrp">
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb es-breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                        <li class="breadcrumb-item"><a href="#">Меню</a></li>
-                        <li class="breadcrumb-item"><a href="#">Категория</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Название товара</li>
-                    </ol>
-                </nav>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="pr-image">
-                            <img src="img/product_1.jpg" alt="product" class="img-fluid">
+                        <div class="pv-image">
+                            <div class="img-wrapper">
+                                <img src="img/product_1.jpg" alt="product" class="img-fluid">
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -108,26 +112,28 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-6 es-pr-wrapper">
-                        <div>
-                            <h1 class="pr-title">Голень ягненка</h1>
-                            <p class="pr-function">Сложно сказать, почему предприниматели в сети интернет функционально разнесены на независимые элементы. Таким образом, высококачественный прототип будущего проекта однозначно фиксирует необходимость укрепления моральных ценностей. Есть над чем задуматься: предприниматели в сети интернет объединены в целые кластеры себе подобных.</p>
-                            <div class="pr-price">250 000 сум</div>
+                    <div class="col-md-6 es-pv-wrapper">
+                        <div class="pv-container">
+                            <h1 class="pv-title">Голень ягненка</h1>
+                            <p class="pv-function">Сложно сказать, почему предприниматели в сети интернет функционально разнесены на независимые элементы. Таким образом, высококачественный прототип будущего проекта однозначно фиксирует необходимость укрепления моральных ценностей. Есть над чем задуматься: предприниматели в сети интернет объединены в целые кластеры себе подобных.</p>
+                            <div class="pv-price">250 000 сум</div>
                             <button class="btn btn-cart">В корзину</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="carusel-product">
+        <section class="carusel-product sections-wrp">
             <div class="container">
                 <h2 class="section-title">Похожие товары</h2>
                 <div class="es-category-list product-slick" style="margin-left: -1.125rem;margin-right: -1.125rem;">
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_2.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_2.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -151,9 +157,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_3.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_3.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -177,9 +185,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_4.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_4.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -203,9 +213,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_5.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_5.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -229,9 +241,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_4.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_4.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -255,9 +269,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_3.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_3.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -281,9 +297,11 @@
                     </div>
                     <div class="es-category-item">
                         <div class="es-carusel-item">
-                            <a href="#">
-                                <img class="lazy img-fluid" status="loading" src="img/product_5.jpg" alt="product">
-                            </a>
+                            <div class="es-carusel-img">
+                                <a href="#">
+                                    <img class="lazy img-fluid" status="loading" src="img/product_5.jpg" alt="product">
+                                </a>
+                            </div>
                             <button class="btn btn-favourite">
                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_40_2865)">
@@ -319,22 +337,22 @@
                 <div class="col-md-2 footer-nav">
                     <ul class="footer-links">
                         <div class="footer-item">Категории</div>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Основные блюда</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Японская кухня</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Десерты</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Лимонады</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Лимонады</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Б.А коктейли</a>
                         </li>
                     </ul>
@@ -342,24 +360,24 @@
                 <div class="col-md-2 footer-nav">
                     <ul class="footer-links">
                         <div class="footer-item">Ссылки</div>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Меню</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">О нас</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Контакты</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Оферта</a>
                         </li>
-                        <li>
+                        <li class="footer-link">
                             <a href="#">Акции</a>
                         </li>
-                        <li>
+                        <liv class="footer-link">
                             <a href="#">Доставка</a>
-                        </li>
+                        </liv>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -388,8 +406,7 @@
             </div>
             <div class="es-footer-bottom">
                 <div class="es-footer-copyright">© 2023 Quadro.</div>
-                <div class="es-footer-developer">Сайт разработан в <a href="https://exord.uz">Exord</a>
-                </div>
+                <div class="es-footer-developer">Сайт разработан в <a href="https://exord.uz">Exord</a></div>
             </div>
         </div>
     </footer>

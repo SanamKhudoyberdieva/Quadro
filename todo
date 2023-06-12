@@ -1,0 +1,8 @@
+max height (product name and description or function)
+breadcrumb should be outside of the section
+container should be closer to content
+remove tags without class 
+change classes (pr-title --> pv-title)
+square container for image
+do not use width for btn , use padding
+**font-family
