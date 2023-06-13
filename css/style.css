@@ -51,6 +51,7 @@ p {
     padding: 60px 0;
     margin-bottom: 0;
     font-style: italic;
+    font-family: 'TT Ramillas';
 }
 
 .breadcrumb-item::before {
@@ -228,6 +229,7 @@ p {
     line-height: 43px;
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'New York Large';
 }
 
 .page-title {
@@ -589,7 +591,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.form-control {
+.es-form-control {
     border-radius: 0;
     border-top: none;
     border-right: none;
@@ -660,7 +662,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.sections-wrp {
+.section-wrp {
     margin-bottom: 120px;
 }
 
@@ -801,15 +803,16 @@ ul {
     margin-bottom: 1.875rem;
 }
 
-.btn-bread {
+.btn-primary {
     color: var(--main-color);
     background-color: #FFFFFF;
     border: 1px solid var(--main-color);
     transition: all 300ms;
     border-radius: 0;
+    padding: 12px 0;
 }
 
-.btn-bread:hover {
+.btn-primay:hover {
     color: #ffffff;
     background-color: #CCAF8D;
 }
@@ -822,3 +825,214 @@ ul {
     width: 20%;
 }
 
+.es-checkout-items {
+    margin-left: 9rem;
+    position: sticky;
+    top: 0;
+    margin-bottom: 2.5rem;
+}
+
+.es-checkout-item {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    padding: 20px 0;
+}
+
+.es-checkout-list {
+    margin-bottom: 1.875rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.es-checkout-img {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.es-checkout-detail {
+    width: calc(100% - 8.75rem);
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.es-checkout-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+
+.es-tab-title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 38px;
+}
+
+.es-control-label {
+    font-weight: 500;
+}
+
+.es-form-group {
+    margin-bottom: 1.875rem;
+}
+
+.es-form-control {
+    height: calc(2rem + 1rem + 2px);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.radio-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+input[type="radio"] {
+    display: inline-grid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 0;
+    color: currentColor;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    -webkit-transform: translateY(-0.075em);
+    transform: translateY(-0.075em);
+    place-content: center;
+    background: var(--border-color);
+    transition: all 0.3s;
+}
+
+input[type="radio"]:hover {
+    background: #e1e1e18a;
+}
+
+input[type="radio"]:checked::before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 0.375rem solid var(--active-color);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 120ms -webkit-transform ease-in-out;
+    transition: 120ms -webkit-transform ease-in-out;
+    transition: 120ms transform ease-in-out;
+    transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+}
+
+.main-form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.es-pv-checklist  {
+    display: flex;
+}
+
+.about-order {
+    border: 1px solid var(--main-color);
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 25px 15px;
+    margin-bottom: 40px;
+}
+
+.es-404-content {
+    text-align: center;
+}
+
+.es-404-img {
+    margin-bottom: 1.25rem;
+}
+
+.btn-primary-lg {
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    padding: 12px 200px;
+}
+
+.btn-primary-lg:hover {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+}
+
+.es-search-block {
+    text-align: center;
+    max-width: 58.75rem;
+    margin: auto;
+}
+
+.es-search-group {
+    margin-bottom: 6.25rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap !important;
+}
+
+.es-search-input {
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.input-group-text {
+    border: none;
+}
+
+.es-search-ic {
+    display: flex;
+    align-items: center;
+}
+
+.noresult {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.start-search {
+    font-family: 'New York Large';
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}

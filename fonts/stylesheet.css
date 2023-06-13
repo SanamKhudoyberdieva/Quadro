@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'TT Ramillas';
+    src: url('TTRamillas-Italic.woff2') format('woff2'),
+        url('TTRamillas-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York Large';
+    src: url('NewYorkLarge-RegularItalic.woff2') format('woff2'),
+        url('NewYorkLarge-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York Small';
+    src: url('NewYorkSmall-Regular.woff2') format('woff2'),
+        url('NewYorkSmall-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York Large';
+    src: url('NewYorkLarge-Medium.woff2') format('woff2'),
+        url('NewYorkLarge-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York Large';
+    src: url('NewYorkLarge-Regular.woff2') format('woff2'),
+        url('NewYorkLarge-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York Large';
+    src: url('NewYorkLarge-Bold.woff2') format('woff2'),
+        url('NewYorkLarge-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'New York';
+    src: url('NewYork-RegularItalic.woff2') format('woff2'),
+        url('NewYork-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

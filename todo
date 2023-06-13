@@ -5,4 +5,5 @@ remove tags without class
 change classes (pr-title --> pv-title)
 square container for image
 do not use width for btn , use padding
-**font-family
+font-family
+**position sticky

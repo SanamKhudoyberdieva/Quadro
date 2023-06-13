@@ -83,112 +83,23 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb es-breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+                    <li class="breadcrumb-item active" aria-current="page">Поиск</li>
                 </ol>
             </nav>
-            <h1 class="page-title">Корзина</h1>
         </div>
-        <section class="es-cart-view section-wrp">
-            <div class="es-cart-header">
-                <div class="container">
-                    <div class="es-ch-block">
-                        <div class="es-ch-product">Товар</div>
-                        <div class="es-ch-price">Цена</div>
-                        <div class="es-ch-quantity">Количество</div>
-                        <div class="es-ch-total">Итого</div>
-                        <div class="es-ch-action">Удалить</div>
+        <section class="section-wrp">
+            <div class="container">
+                <div class="es-search-block">
+                    <div class="input-group flex-nowrap es-search-group">
+                        <input type="text" class="form-control es-search-input" placeholder="Поиск" aria-label="Username" aria-describedby="addon-wrapping">
+                        <div class="es-search-ic">
+                            <img src="img/ic_search_normal.svg" alt="search">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="es-cart-products">
-                <div class="container">
-                    <div id="cart-content">
-                        <div class="es-ch-block es-cart-item">
-                            <div class="es-ch-product">
-                                <div class="es-ch-img">
-                                    <img src="img/cart_1.jpg" class="lazy img-fluid"/>
-                                </div>
-                                <div class="es-ch-detail">
-                                    <div class="es-ch-title">Медальоны с карт крокетами</div>
-                                </div>
-                            </div>
-                            <div class="es-ch-price">250 000 сум</div>
-                            <div class="es-ch-quantity">
-                                <div class="es-product-controls">
-                                    <button class="btn btn-counter btn-minus" data-action="minus-quantity">-</button>
-                                    <span class="es-product-quantity">1</span>
-                                    <button class="btn btn-counter btn-minus" data-action="plus-quantity">+</button>
-                                </div>
-                            </div>
-                            <div class="es-ch-total">250 000 сум</div>
-                            <div class="es-ch-action">
-                                <button class="btn btn-icon" type="button" data-action="remove-item">
-                                    <img src="/img/ic_cart_btn.svg"/>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="es-ch-block es-cart-item">
-                            <div class="es-ch-product">
-                                <div class="es-ch-img">
-                                    <img src="img/cart_2.jpg" class="lazy img-fluid"/>
-                                </div>
-                                <div class="es-ch-detail">
-                                    <div class="es-ch-title">Хенд ролл с угрём</div>
-                                </div>
-                            </div>
-                            <div class="es-ch-price">250 000 сум</div>
-                            <div class="es-ch-quantity">
-                                <div class="es-product-controls">
-                                    <button class="btn btn-counter btn-minus" data-action="minus-quantity">-</button>
-                                    <span class="es-product-quantity">1</span>
-                                    <button class="btn btn-counter btn-minus" data-action="plus-quantity">+</button>
-                                </div>
-                            </div>
-                            <div class="es-ch-total">250 000 сум</div>
-                            <div class="es-ch-action">
-                                <button class="btn btn-icon" type="button" data-action="remove-item">
-                                    <img src="/img/ic_cart_btn.svg"/>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="es-ch-block es-cart-item">
-                            <div class="es-ch-product">
-                                <div class="es-ch-img">
-                                    <img src="img/cart_3.jpg" class="lazy img-fluid"/>
-                                </div>
-                                <div class="es-ch-detail">
-                                    <div class="es-ch-title">Десерт Карота</div>
-                                </div>
-                            </div>
-                            <div class="es-ch-price">250 000 сум</div>
-                            <div class="es-ch-quantity">
-                                <div class="es-product-controls">
-                                    <button class="btn btn-counter btn-minus" data-action="minus-quantity">-</button>
-                                    <span class="es-product-quantity">15</span>
-                                    <button class="btn btn-counter btn-minus" data-action="plus-quantity">+</button>
-                                </div>
-                            </div>
-                            <div class="es-ch-total">250 000 сум</div>
-                            <div class="es-ch-action">
-                                <button class="btn btn-icon" type="button" data-action="remove-item">
-                                    <img src="/img/ic_cart_btn.svg"/>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="es-cart-footer">
-                            <div class="es-cf-left">
-                                <a href="/ru/menu" class="es-back-link">
-                                    <img src="/img/ic_back.svg"/> назад к покупкам
-                                </a>
-                            </div>
-                            <div class="es-cf-right">
-                                <div class="es-cart-total">
-                                    <div class="es-ct-label">Итого:</div>
-                                    <div class="es-ct-value">1 000 000 сум</div>
-                                </div>
-                                <a class="btn btn-primary btn-lg w-100" href="#" data-target="#authModal" data-toggle="modal">Оформить заказ</a>          
-                            </div>
-                        </div>
+                    <div class="es-search-result">
+                        <img src="img/search.svg" alt="search">
+                        <div class="noresult">Пока ничего нет</div>
+                        <div class="start-search">Начните поиск товаров</div>
                     </div>
                 </div>
             </div>
