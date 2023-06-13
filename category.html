@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS and FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="css/slick.min.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/media.css" media="all">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-logo" href="#">
+                    <img src="img/logo_header.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse es-header-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Меню</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оферта</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-nav">
+                    <a href="tel:9987811301338">+99878 130 13 38</a>
+                    <p class="working-hours">Каждый день с 11:00 до 00:00</p>
+                </div>
+                <div class="collapse navbar-collapse es-header-icon">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_profile.svg" alt="profile">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_favourite.svg" alt="favourite">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_search.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_cart.svg" alt="cart">
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_hamburger.svg" alt="hamburger">
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="category-menu">
+            <div class="category-menu-header">
+                <div class="header-content">
+                    <h1 class="header-cont-title">Меню</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb es-breadcrumb-menu">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item">Меню</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="nav nav-tabs es-nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Сезонное меню</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Основное меню</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Японское меню</button>
+                    </li>
+                </ul>
+                <h2 class="header-content-subtitle">Основное меню</h2>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="nav nav-pills es-nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Паста и Ризотто</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Супы</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Супы</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="es-products-list">
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/product_2.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>                                    
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Медальоны с карт крокетами</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/product_3.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Хенд ролл с угрём</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/product_4.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Десерт Карота</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/product_5.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Black Currant</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/new_4.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>                                    
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Медальоны с карт крокетами</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/new_3.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Хенд ролл с угрём</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/new_2.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Десерт Карота</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="es-product-wrapper">
+                                        <div class="es-carusel-item">
+                                            <div class="es-carusel-img">
+                                                <a href="#">
+                                                    <img class="lazy img-fluid" status="loading" src="img/new_1.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <button class="btn btn-favourite">
+                                                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_40_2865)">
+                                                    <rect x="26" y="1.61885" width="35" height="35" transform="rotate(45 26 1.61885)" fill="white" stroke="#3B1E1C"/>
+                                                    <rect x="26" y="50.9117" width="36" height="36" transform="rotate(45 26 50.9117)" fill="#3B1E1C"/>
+                                                    <path d="M26.0089 32.5192C25.7539 32.6092 25.3339 32.6092 25.0789 32.5192C22.9039 31.7767 18.0439 28.6792 18.0439 23.4292C18.0439 21.1117 19.9114 19.2367 22.2139 19.2367C23.5789 19.2367 24.7864 19.8967 25.5439 20.9167C26.3014 19.8967 27.5164 19.2367 28.8739 19.2367C31.1764 19.2367 33.0439 21.1117 33.0439 23.4292C33.0439 28.6792 28.1839 31.7767 26.0089 32.5192Z" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_40_2865">
+                                                    <rect width="36" height="36" fill="white" transform="translate(26 0.911743) rotate(45)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="es-carusel-info">
+                                            <div class="es-product-title">
+                                                <a href="#">Black Currant</a>
+                                            </div>
+                                            <div class="es-pro-price">250 000 сум</div>
+                                            <button class="btn es-btn-cart">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..ggg.</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..yyy.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                    <div class="footer-content">Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке лишь добавляют фракционных разногласий и обнародованы.</div>
+                </div>
+                <div class="col-md-2 footer-nav">
+                    <ul class="footer-links">
+                        <div class="footer-item">Категории</div>
+                        <li class="footer-link">
+                            <a href="#">Основные блюда</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Японская кухня</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Десерты</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Лимонады</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Лимонады</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Б.А коктейли</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-nav">
+                    <ul class="footer-links">
+                        <div class="footer-item">Ссылки</div>
+                        <li class="footer-link">
+                            <a href="#">Меню</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Оферта</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Акции</a>
+                        </li>
+                        <liv class="footer-link">
+                            <a href="#">Доставка</a>
+                        </liv>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-footer">
+                        <div class="contact-number">
+                            <a href="tel:998781301338">+99878 130 13 38</a>
+                        </div>
+                        <div class="contact-info">Каждый день с 11:00 до 00:00</div>
+                        <div class="contact-info">
+                            <a href="https:info@quadro.com">info@quadro.com</a>
+                        </div>
+                        <div class="contact-info">24 Zulfiya xonim ko'chasi, Tashkent</div>
+                        <div class="social-container">
+                            <a href="#">
+                                <img src="img/ic_facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="img/ic_telegram.svg" alt="telegram">
+                            </a>
+                            <a href="#">
+                                <img src="img/ic_instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="es-footer-bottom">
+                <div class="es-footer-copyright">© 2023 Quadro.</div>
+                <div class="es-footer-developer">Сайт разработан в <a href="https://exord.uz">Exord</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/poper.min.js"></script>
+    <script src="js/bootstrap.min.js" async></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.js"></script>
+    <script src="js/sweet.alert.min.js"></script>
+    <script src="js/app.js?v=1.0.4"></script>
+</body>
+</html>

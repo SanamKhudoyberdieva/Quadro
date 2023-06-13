@@ -45,6 +45,23 @@ p {
 /* Breadcrumb */
 /* ========================================================== */
 
+.es-breadcrumb-menu {
+    background-color: transparent;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'TT Ramillas';
+    color: #FFFFFF;
+}
+
+.es-breadcrumb-menu a {
+    color: #FFFFFF;
+}
+
+.es-breadcrumb-menu .breadcrumb-item::before {
+    color: #FFFFFF !important;
+    font-weight: 400;
+}
+
 .es-breadcrumb {
     background-color: transparent;
     font-size: 16px;
@@ -1188,4 +1205,107 @@ input[type="radio"]::before {
 .order-complete {
     margin-bottom: 240px;
     margin-top: 100px;
+}
+
+
+
+
+
+.es-tabs {
+    display: flex;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.es-tabs .nav-item {
+    width: 49%;
+}
+
+.es-tabs .nav-link {
+    text-align: center;
+    border-radius: 0;
+    width: 100%;
+}
+
+.es-tabs .nav-link.active,
+.es-tabs .show > .nav-link {
+    color: #3B1E1C;
+    background-color: #FFFFFF;
+}
+
+.category-menu-header {
+    background-image: url("/img/category_1.jpg");
+    margin-bottom: 100px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.header-cont-title {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.es-nav-tabs {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.es-nav-tabs .nav-link {
+    color: var(--main-color);
+    border: none;
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.es-nav-tabs .nav-link.active {
+    color: var(--main-color);
+    border: none;
+    text-decoration: underline;
+}
+
+.es-nav-tabs .nav-link {
+    border: none;
+    background-color: inherit;
+}
+
+.header-content-subtitle {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.es-nav-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.es-nav-pills .nav-link {
+    border-radius: 0;
+    margin-right: 10px;
+    border: 1px solid var(--main-color);
+    background-color: inherit;
+}
+
+.es-nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border-radius: 0;
 }
