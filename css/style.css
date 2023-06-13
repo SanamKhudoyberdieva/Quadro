@@ -180,8 +180,22 @@ p {
     color: var(--main-color);
 }
 
+.es-btn-dark {
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    padding: 12px 82px;
+    color: #FFFFFF;
+    font-weight: 500;
+    background-color: var(--main-color);
+}
+
+.es-btn-dark:hover {
+    background-color: #FFFFFF;
+    color: var(--main-color);
+}
+
 .btn-cart {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--main-color);
     border-radius: 0;
     padding: 12px 71px;
     color: var(--main-color);
@@ -1035,4 +1049,143 @@ input[type="radio"]::before {
     font-weight: 400;
     line-height: 19px;
     text-align: center;
+}
+
+.es-profile-card {
+    border-radius: 0;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.es-user-info-body {
+    padding: 0 1.25rem;
+}
+
+.es-profile-detail {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.es-profile-detail:nth-last-child(1) {
+    border: none;
+}
+
+.es-profile-value {
+    font-weight: 500;
+}
+
+.es-accumulative-title {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.es-profile-qr {
+    margin-bottom: 1.25rem;
+}
+
+.es-card-balance {
+    display: flex;
+    justify-content: center;
+}
+
+.es-cb-value {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.es-profile-actions {
+    margin-top: 2.5rem;
+}
+
+.es-history {
+    padding: 0 3rem;
+}
+
+.es-history-title {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 0.625rem;
+}
+
+.history-table {
+    color: #000000;
+}
+
+.es-empty-history {
+    text-align: center;
+    width: max-content;
+}
+
+.empty-history-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.empty-history-desc {
+    margin-bottom: 2.5rem;
+}
+
+.es-order-complete {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.es-inner-wrp {
+    transform: rotate(-45deg);
+}
+
+.es-order-complete-logo {
+    margin-bottom: 20px;
+}
+
+.es-order-complete-title {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.es-order-number {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.es-order-complete-desc {
+    font-family: 'New York Large';
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    margin-bottom: 10px;
+}
+
+.order-complete-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.order-complete {
+    margin-bottom: 240px;
+    margin-top: 100px;
 }
