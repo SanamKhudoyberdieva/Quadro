@@ -1309,3 +1309,66 @@ input[type="radio"]::before {
     background-color: var(--main-color);
     border-radius: 0;
 }
+
+.discount-pr {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.discount-date {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border: 1px solid var(--main-color);
+    min-height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+}
+
+.discount-date-inner {
+    transform: rotate(-45deg);
+}
+
+.discount-type {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.discount-desc {
+    font-family: 'New York';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+}
+
+.discount-pr-container {
+    display: flex;
+}
+
+.discout-heading-wrp {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3B1E1C;
+    max-width: 280px;
+    margin-right: 20px;
+}
+
+.discount-pr-content {
+    max-width: 700px;
+    margin-bottom: 10px;
+    font-family: 'New York';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+}
