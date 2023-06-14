@@ -1372,3 +1372,50 @@ input[type="radio"]::before {
     font-weight: 400;
     line-height: 19px;
 }
+
+.contact-label {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 25px 0;
+}
+
+.contact-item {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3B1E1C;
+    margin-top: 10px;
+}
+
+.contact-type {
+    margin-right: 20px;
+}
+
+.es-group-title {
+    font-family: 'New York Large';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.es-public-offer {
+    max-width: 58.75rem;
+    margin: auto;
+}
+
+.es-public-offer-text {
+    font-family: 'New York';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 2.5rem;
+}
+
+.es-public-offer-text:nth-last-child(1) {
+    margin-bottom: 0;
+}
