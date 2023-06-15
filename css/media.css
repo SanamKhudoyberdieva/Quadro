@@ -389,13 +389,18 @@
         margin-bottom: 30px;
     }
 
+    .radio-mr {
+        margin-right: 10px;
+    }
+
     .radio-label {
         margin-bottom: 15px;
-        margin-right: 0;
     }
 
     .radio-label-wrp {
         margin-right: 60px;
+        display: flex;
+        flex-direction: column;
     }
 
     .es-map {
