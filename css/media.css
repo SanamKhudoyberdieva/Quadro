@@ -1,0 +1,515 @@
+:root {
+    --main-color: #3B1E1C;
+    --active-color: #FEF3E1;
+    --border-color: #E8E8E8;
+}
+
+@media (max-width: 1440px) {
+    .navbar-wrp-sm {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sm-hide {
+        display: none;
+    }
+
+    .main-header .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-wrp-sm {
+        display: flex;
+    }
+
+    .navbar-wrp-sm .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-wrp-sm .navbar-nav li {
+        margin-left: 10px;
+    }
+
+    .carousel-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-info {
+        font-weight: 496;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn-cart-light {
+        padding: 9px 31px;
+    }
+
+    .carousel-backdrop {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 25px;
+    }
+
+    .section-wrp {
+        margin-bottom: 50px;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 20px;
+    }
+
+    .img-wrapper {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .img-wrapper:after  {
+        padding-bottom: 0;
+    }
+
+    .menu-content-wrapper {
+        margin-left: 0;
+    }
+
+    .menu-type {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+        height: 19px;
+    }
+
+    .menu-type-desc {
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: 65px;
+    }
+
+    .links-container {
+        justify-content: start;
+    }
+
+    .booking-form {
+        width: 90%;
+        padding: 30px 20px;
+        background-color: #FFFFFF;
+    }
+
+    .booking-bg {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+
+    .es-product-wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 25px;
+    }
+    
+    .es-product-title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        height: 46px;
+        overflow: hidden;
+    }
+
+    .es-pro-price {
+        margin-bottom: 10px;
+    }
+
+    .es-row-img {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .icon-wrapper-lg {
+        padding-left: 15px;
+    }
+
+    .footer-wrapper {
+        padding-top: 50px;
+    }
+
+    .footer-content {
+        margin-top: 30px;
+    }
+
+    .footer-nav {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+
+    .contact-footer {
+        text-align: start;
+    }
+
+    .contact-number a {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 5px;
+    }
+
+    .contact-number {
+        margin-bottom: 5px;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .social-container img {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .es-footer-bottom {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .es-breadcrumb {
+        padding: 30px 0;
+    }
+
+    .pv-title {
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        height: 2rem;
+    }
+
+    .pv-function {
+        margin-bottom: 25px;
+    }
+
+    .pv-price {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    .es-pv-wrapper {
+        padding-left: 15px;
+    }
+
+    .section-title {
+        text-align: start;
+    }
+
+    .btn-sm {
+        width: 100%;
+    }
+
+    .category-menu-header {
+        background-image: url(/img/category_bg_sm.jpg);
+        margin-bottom: 70px;
+    }
+
+    .header-cont-title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0;
+    }
+
+    .page-title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+
+    .es-cart-header {
+        display: none;
+    }
+
+    .es-ch-block {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .es-cart-item {
+        padding-bottom: 1.875rem;
+        position: relative;
+    }
+
+    .es-ch-product {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .es-ch-img {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    .es-ch-detail {
+        width: 100%;
+    }
+
+    .es-ch-detail, .es-ch-price, .es-ch-quantity {
+        margin-bottom: 1rem;
+    }
+
+    .es-ch-title {
+        font-size: 16px;
+    }
+
+    .es-ch-quantity .es-product-controls {
+        width: 100px;
+    }
+
+    .es-cart-footer {
+        flex-direction: column;
+    }
+
+    .es-cf-left {
+        margin-bottom: 2rem;
+    }
+
+    .es-cf-right {
+        width: 100%;
+    }
+
+    .es-ch-price {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+    
+    .es-ch-price:before {
+        content: "Цена";
+    }
+
+    .es-ch-quantity {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .es-ch-quantity:before {
+        content: "Количество";
+    }
+
+    .es-ch-total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+    
+    .es-ch-total:before {
+        content: "Итого";
+    }
+
+    .es-ch-action .btn-icon {
+        position: absolute;
+        right: 5px;
+        top: 40px;
+    }
+
+    .es-checkout-items {
+        margin-left: 0;
+    }
+
+    .es-cf-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .es-cf-value {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .es-checkout-row {
+        margin-bottom: 10px;
+    }
+
+    .es-cf-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .es-tab-title {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+
+    .about-order {
+        margin-bottom: 30px;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-pills .es-btn-dark {
+        padding: 8px 16px;
+    }
+
+    .es-tabs {
+        margin-bottom: 30px;
+    }
+
+    .radio-label {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .radio-label-wrp {
+        margin-right: 60px;
+    }
+
+    .es-map {
+        display: none;
+    }
+
+    .es-order-complete {
+        border: none;
+        text-align: center;
+        height: 330px;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .es-inner-wrp {
+        transform: none;
+    }
+
+    .order-complete {
+        margin-top: 0;
+    }
+
+    .es-order-complete-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .es-order-number {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .btn-sm {
+        width: 100%;
+    }
+
+    .btn-primary-lg {
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    .es-search-group {
+        margin-bottom: 50px;
+    }
+
+    .noresult {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .discount-content {
+        margin-bottom: 40px;
+    }
+
+    .discount-type {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .discount-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .contact-label {
+        padding: 15px;
+    }
+
+    .es-group-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .es-public-offer-text {
+        margin-bottom: 30px;
+        line-height: 17px;
+    }
+
+    .es-history-title {
+        margin: 0;
+        margin-bottom: 1.875rem;
+        font-size: 1.5rem;
+    }
+
+    .es-empty-history {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .es-empty-history .btn {
+        width: 100%;
+    }
+
+    .empty-history-title {
+        font-size: 1.25rem;
+    }
+
+    .empty-history-desc {
+        margin-bottom: 1.875rem;
+    }
+
+    .es-history {
+        padding: 0;
+    }
+
+
+}

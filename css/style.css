@@ -11,7 +11,6 @@ html {
 html,
 body {
     font-size: 16px;
-    /* font-family: "Roboto", sans-serif; */
     font-weight: normal;
     color: #000000;
     background-color: #FFFFFF;
@@ -85,6 +84,10 @@ p {
     padding: 0;
 }
 
+.es-logo {
+    width: 20%;
+}
+
 .navbar {
     padding: 0.5rem 0rem;
 }
@@ -95,7 +98,7 @@ p {
 
 .es-header-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .es-header-nav a {
@@ -122,11 +125,6 @@ p {
     line-height: 19px;
 }
 
-.es-header-icon {
-    display: flex;
-    justify-content: end;
-}
-
 .pv-image {
     position: relative;
 }
@@ -151,6 +149,11 @@ p {
     justify-content: center;
     position: relative;
     overflow: hidden;
+}
+
+.main-carousel .carousel-item .img-fluid {
+    height: 43.75rem;
+    object-fit: cover;
 }
 
 .es-carusel-img:after {
@@ -261,6 +264,7 @@ p {
     text-align: center;
     margin-bottom: 40px;
     font-family: 'New York Large';
+    color: var(--main-color);
 }
 
 .page-title {
@@ -381,7 +385,6 @@ ul {
     font-size: 36px;
     line-height: 43px;
     color: var(--main-color);
-    margin-bottom: 10px;
 }
 
 .contact-footer {
@@ -601,17 +604,17 @@ ul {
     transform: rotate(-45deg);
 }
 
-.booking {
-    position: relative;
+.booking-bg {
+    background-image: url("/img/bg_booking.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
 }
 
 .booking-form {
     width: 50%;
     padding: 40px 80px;
     background-color: #FFFFFF;
-    position: absolute;
-    top: 10%;
-    right: 25%;
 }
 
 .booking-desc {
@@ -1413,3 +1416,81 @@ input[type="radio"]::before {
 .es-public-offer-text:nth-last-child(1) {
     margin-bottom: 0;
 }
+
+.es-map-btn {
+    border: 1px solid var(--main-color);
+    background-color: var(--active-color);
+    width: 100%;
+    border-radius: 0;
+    padding: 12px 0;
+    margin-top: 15px;
+}
+
+.es-dropdown-wrp {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+.es-btn-dropdown {
+    text-align: start;
+    padding-left: 0;
+    position: relative;
+}
+
+.dropright .dropdown-toggle::after {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+.modal-dialog-full {
+    max-width: 100%;
+    margin: 0;
+}
+
+.modal-dialog-full .modal-content {
+    border: 0;
+    border-radius: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.modal-dialog-full .modal-header {
+    background-color: #FFFFFF;
+    padding: 0.75rem 15px;
+    border-radius: 0;
+    align-items: center;
+}
+
+.modal-dialog-full .modal-body {
+    padding: 2.5rem 1.25rem;
+    overflow-y: scroll;
+}
+
+.modal-content {
+    position: relative;
+    border-radius: 0;
+}
+
+.es-modal-sticky-nav {
+    display: flex;
+}
+
+.es-modal-title  {
+    font-family: 'TT Ramillas';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.es-modal-back {
+    width: 10%;
+    text-align: left;
+    padding-left: 1.25rem;
+}
+

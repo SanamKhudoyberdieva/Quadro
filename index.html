@@ -20,8 +20,8 @@
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-logo" href="#">
-                    <img src="img/logo_header.png" alt="logo">
+                <a class="navbar-logo es-logo" href="#">
+                    <img src="img/logo_header.png" class="img-fluid" alt="logo">
                 </a>
                 <div class="collapse navbar-collapse es-header-nav">
                     <ul class="navbar-nav">
@@ -41,12 +41,10 @@
                             <a class="nav-link" href="#">Акции</a>
                         </li>
                     </ul>
-                </div>
-                <div class="contact-nav">
-                    <a href="tel:9987811301338">+99878 130 13 38</a>
-                    <p class="working-hours">Каждый день с 11:00 до 00:00</p>
-                </div>
-                <div class="collapse navbar-collapse es-header-icon">
+                    <div class="contact-nav">
+                        <a href="tel:9987811301338">+99878 130 13 38</a>
+                        <p class="working-hours">Каждый день с 11:00 до 00:00</p>
+                    </div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">
@@ -68,11 +66,25 @@
                                 <img src="img/ic_cart.svg" alt="cart">
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
+                    </ul>
+                </div>
+                <div class="navbar-wrp-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img src="img/ic_hamburger.svg" alt="hamburger">
+                                <img src="img/ic_favourite_sm.svg" alt="favourite">
                             </a>
-                        </li> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_search_sm.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn nav-link" href="#"  data-target="#menuModal" data-toggle="modal">
+                                <img src="img/ic_hamburger.svg" alt="hamburger">
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -121,14 +133,14 @@
                         </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" data-slide="prev" data-target="#mainCarousel" type="button">
+                    <button class="carousel-control-prev sm-hide" data-slide="prev" data-target="#mainCarousel" type="button">
                         <span>
                             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.70594 13.3959L1.81594 8.50587C1.23844 7.92837 1.23844 6.98337 1.81594 6.40587L6.70594 1.51587" stroke="#3B1E1C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
                     </button>
-                    <button class="carousel-control-next" data-slide="next" data-target="#mainCarousel" type="button">
+                    <button class="carousel-control-next sm-hide" data-slide="next" data-target="#mainCarousel" type="button">
                         <span>
                             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.70594 13.3959L1.81594 8.50587C1.23844 7.92837 1.23844 6.98337 1.81594 6.40587L6.70594 1.51587" stroke="#3B1E1C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -215,7 +227,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="menu-item">
+                        <div class="menu-item  border-0">
                             <div class="img-wrapper">
                                 <a href="#">
                                     <img src="img/menu_6.jpg" alt="menu">
@@ -242,63 +254,64 @@
             </div>
         </section>
         <section class="booking section-wrp">
-            <img class="img-fluid" src="img/bg_booking.jpg" alt="background">
-            <div class="booking-form">
-                <h2 class="section-title">Забронировать место</h2>
-                <div class="booking-desc">
-                    Заполните поля и оформите предзакз. Для подтверждения бронирования с вами свяжется наши сотрудники.
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="name" class="form-control main-form-control " id="InputName" placeholder="* Имя">
-                        </div>
-                        <div class="form-group">
-                            <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
-                        </div>
-                        <div class="form-group">
-                            <input type="date" class="form-control main-form-control " id="InputDate" placeholder="* Дата и время">
-                        </div>
+            <div class="booking-bg">
+                <div class="booking-form">
+                    <h2 class="section-title">Забронировать место</h2>
+                    <div class="booking-desc">
+                        Заполните поля и оформите предзакз. Для подтверждения бронирования с вами свяжется наши сотрудники.
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="surname" class="form-control main-form-control " id="InputSurname" placeholder="* Фамилия">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="name" class="form-control main-form-control " id="InputName" placeholder="* Имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control main-form-control " id="InputDate" placeholder="* Дата и время">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control main-form-control " id="InputNumber" placeholder="* Количество персон">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="surname" class="form-control main-form-control " id="InputSurname" placeholder="* Фамилия">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control main-form-control " id="InputNumber" placeholder="* Количество персон">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control main-form-control " id="InputEmail" placeholder="* E-mail">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control main-form-control " id="InputEmail" placeholder="* E-mail">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="comment" class="form-control main-form-control " id="InputDate" placeholder="* Комментарий к бронированию">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <input type="comment" class="form-control main-form-control " id="InputDate" placeholder="* Комментарий к бронированию">
+                        <div class="col-md-6">
+                            <div class="icon-wrapper">
+                                <a href="#" class="links">
+                                    <div class="icon-container">
+                                        <img src="img/ic_shopping_cart.svg" alt="cart">
+                                    </div>
+                                    Оформить предзаказ
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="icon-wrapper">
-                            <a href="#" class="links">
-                                <div class="icon-container">
-                                    <img src="img/ic_shopping_cart.svg" alt="cart">
-                                </div>
-                                Оформить предзаказ
-                            </a>
+                        <div class="col-md-6">
+                            <div class="icon-wrapper">
+                                <a href="#" class="links">
+                                    <div class="icon-container">
+                                        <img src="img/ic_notification.svg" alt="notification">
+                                    </div>
+                                    Оформить предзаказ
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="icon-wrapper">
-                            <a href="#" class="links">
-                                <div class="icon-container">
-                                    <img src="img/ic_notification.svg" alt="notification">
-                                </div>
-                                Оформить предзаказ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="booking-guide">
-                            Нажимая кнопку “Забронировать” <br> Вы соглашаетесь с <span> Политикой конфеденциальности</span> ресторана!
+                        <div class="col">
+                            <div class="booking-guide">
+                                Нажимая кнопку “Забронировать” <br> Вы соглашаетесь с <span> Политикой конфеденциальности</span> ресторана!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -621,7 +634,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                    <div class="footer-logo-wrp">
+                        <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                    </div>
                     <div class="footer-content">Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке лишь добавляют фракционных разногласий и обнародованы.</div>
                 </div>
                 <div class="col-md-2 footer-nav">
@@ -700,6 +715,117 @@
             </div>
         </div>
     </footer>
+
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-full">
+        <div class="modal-content">
+        <div class="modal-header">
+            <a class="navbar-logo es-logo" href="#">
+                <img src="img/logo_header.png" class="img-fluid" alt="logo">
+            </a>
+            <div class="navbar-wrp-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="img/ic_favourite_sm.svg" alt="favourite">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="img/ic_search_sm.svg" alt="search">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn nav-link" href="#"  data-target="#menuModal" data-toggle="modal">
+                            <img src="img/ic_close.svg" alt="close">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Основные блюда
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Японская кухня
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Десерты
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Лимонады
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Чаи
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="btn-group dropright es-dropdown-wrp">
+                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Б.А коктейли
+                </button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="#">Меню</a>
+                </li>
+                <li class="footer-link">
+                    <a href="#">О нас</a>
+                </li>
+                <li class="footer-link">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="footer-link">
+                    <a href="#">Оферта</a>
+                </li>
+                <li class="footer-link">
+                    <a href="#">Акции</a>
+                </li>
+                <liv class="footer-link">
+                    <a href="#">Доставка</a>
+                </liv>
+            </ul>
+            <div class="contact-footer">
+                <div class="contact-number">
+                    <a href="tel:998781301338">+99878 130 13 38</a>
+                </div>
+                <div class="contact-info">Каждый день с 11:00 до 00:00</div>
+                <div class="contact-info">
+                    <a href="https:info@quadro.com">info@quadro.com</a>
+                </div>
+                <div class="contact-info">24 Zulfiya xonim ko'chasi, Tashkent</div>
+                <div class="social-container">
+                    <a href="#">
+                        <img src="img/ic_facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/ic_telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#">
+                        <img src="img/ic_instagram.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/poper.min.js"></script>

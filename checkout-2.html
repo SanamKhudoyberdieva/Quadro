@@ -20,8 +20,8 @@
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-logo" href="#">
-                    <img src="img/logo_header.png" alt="logo">
+                <a class="navbar-logo es-logo" href="#">
+                    <img src="img/logo_header.png" class="img-fluid" alt="logo">
                 </a>
                 <div class="collapse navbar-collapse es-header-nav">
                     <ul class="navbar-nav">
@@ -41,12 +41,10 @@
                             <a class="nav-link" href="#">Акции</a>
                         </li>
                     </ul>
-                </div>
-                <div class="contact-nav">
-                    <a href="tel:9987811301338">+99878 130 13 38</a>
-                    <p class="working-hours">Каждый день с 11:00 до 00:00</p>
-                </div>
-                <div class="collapse navbar-collapse es-header-icon">
+                    <div class="contact-nav">
+                        <a href="tel:9987811301338">+99878 130 13 38</a>
+                        <p class="working-hours">Каждый день с 11:00 до 00:00</p>
+                    </div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">
@@ -68,11 +66,25 @@
                                 <img src="img/ic_cart.svg" alt="cart">
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
+                    </ul>
+                </div>
+                <div class="navbar-wrp-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_favourite_sm.svg" alt="favourite">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_search_sm.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <img src="img/ic_hamburger.svg" alt="hamburger">
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +131,10 @@
                                         </div>
                                         <div class="col-12">
                                             <p class="control-label es-control-label">*Найдите место на карте и кликайте на него!</p>
-                                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a0ab296e7f6ee9a306fec31493359dffdc20a2de4844d2b68d375c072b3d4eb&amp;width=100%&amp;height=440px&amp;lang=en_FR&amp;scroll=true"></script>
+                                            <div class="es-map">
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a0ab296e7f6ee9a306fec31493359dffdc20a2de4844d2b68d375c072b3d4eb&amp;width=100%&amp;height=440px&amp;lang=en_FR&amp;scroll=true"></script>
+                                            </div>
+                                            <button class="btn es-map-btn d-md-none" data-toggle="modal" data-target="#mapModal">Указать на карте</button>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group es-form-group">
@@ -138,14 +153,18 @@
                                                 <label class="control-label es-control-label">Выберите способ оплаты</label>
                                                 <input type="hidden" name="OrderForm[payment]" value="">
                                                 <div id="orderform-payment" class="es-pv-checklist" role="radiogroup">
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
-                                                        Наличные</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
-                                                        Click</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
-                                                        Payme</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
-                                                        Visa</label>
+                                                    <div class="radio-label-wrp">
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
+                                                            Наличные</label>
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
+                                                            Click</label>
+                                                    </div>
+                                                    <div class="radio-label-wrp">
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
+                                                            Payme</label>
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
+                                                            Visa</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,14 +203,18 @@
                                                 <label class="control-label es-control-label">Выберите способ оплаты</label>
                                                 <input type="hidden" name="OrderForm[payment]" value="">
                                                 <div id="orderform-payment" class="es-pv-checklist" role="radiogroup">
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
-                                                        Наличные</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
-                                                        Click</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
-                                                        Payme</label>
-                                                    <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
-                                                        Visa</label>
+                                                    <div class="radio-label-wrp">
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
+                                                            Наличные</label>
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="CASH">
+                                                            Click</label>
+                                                    </div>
+                                                    <div class="radio-label-wrp">
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
+                                                            Payme</label>
+                                                        <label class="radio-label"><input type="radio" name="OrderForm[payment]" value="PAYME">
+                                                            Visa</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,7 +293,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                    <div class="footer-logo-wrp">
+                        <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                    </div>
                     <div class="footer-content">Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке лишь добавляют фракционных разногласий и обнародованы.</div>
                 </div>
                 <div class="col-md-2 footer-nav">
@@ -349,6 +374,49 @@
             </div>
         </div>
     </footer>
+
+    <!-- Map Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-full">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="navbar-logo es-logo" href="#">
+                    <img src="img/logo_header.png" class="img-fluid" alt="logo">
+                </a>
+                <div class="navbar-wrp-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_favourite_sm.svg" alt="favourite">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="img/ic_search_sm.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn nav-link" href="#"  data-target="#menuModal" data-toggle="modal">
+                                <img src="img/ic_hamburger.svg" alt="hamburger">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-body p-0">
+            <div class="es-modal-sticky-nav">
+                <button class="btn es-modal-back" data-toggle="modal" data-target="#mapModal">
+                    <img src="img/ic_exit.svg" alt="">
+                </button>
+                <h3 class="es-modal-title">Назад</h3>
+            </div>
+            <div class="es-map-sm">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a0ab296e7f6ee9a306fec31493359dffdc20a2de4844d2b68d375c072b3d4eb&amp;width=100%&amp;height=440px&amp;lang=en_FR&amp;scroll=true"></script>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/poper.min.js"></script>
