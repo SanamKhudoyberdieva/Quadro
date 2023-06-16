@@ -4,6 +4,12 @@
     --border-color: #E8E8E8;
 }
 
+@media (min-width: 1440px) {
+    .navbar-wrp-sm {
+        display: none;
+    }
+}
+
 @media (max-width: 1440px) {
     .navbar-wrp-sm {
         display: none;
@@ -16,7 +22,7 @@
     }
 
     .main-header .navbar {
-        padding: 0.5rem;
+        padding: 1px 20px;
     }
 
     .navbar-wrp-sm {
@@ -53,11 +59,50 @@
         padding: 20px;
     }
 
+    .img-wrapper-inner::before {
+        height: 100px;
+        width: 100px;
+    }
+
+    .booking-desc {
+        margin-bottom: 30px;
+    }
+    
+    .es-main-form {
+        width: 100%;
+    }
+
+    .es-btn-cart {
+        padding: 7px 18px;
+    }
+
+    .es-about-banner {
+        height: 360px;
+    }
+
+    .about-content-wrapper {
+        padding: 0;
+    }
+
+    .es-carusel-info {
+        margin-top: 10px;
+    }
+
+    .icon-wrapper {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .booking-guide {
+        margin-top: 30px;
+    }
+
     .section-title {
+        text-align: center;
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .section-wrp {
@@ -67,15 +112,25 @@
     .menu-item {
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         border-bottom: 1px solid var(--border-color);
         padding-bottom: 20px;
     }
 
-    .img-wrapper {
+    .img-container {
+        display: flex;
+        justify-content: start;
+        margin-left: 20px;
+        height: 150px;
+        margin-bottom: 12px;
+    }
+
+    .img-wrapper-inner {
         margin-bottom: 15px;
         display: flex;
         justify-content: start;
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .img-wrapper:after  {
@@ -101,6 +156,7 @@
 
     .links-container {
         justify-content: start;
+        margin-left: 20px;
     }
 
     .booking-form {
@@ -113,10 +169,30 @@
         padding: 50px 0;
     }
 
-    .section-title {
-        font-size: 24px;
-        line-height: 29px;
-        margin-bottom: 30px;
+    .es-carouse-item {
+        height: 420px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 20px;
+    }
+
+    .es-carousel-content {
+        padding: 0;
+    }
+
+    .es-carousel-banner {
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .es-logo {
+        width: auto;
+    }
+
+    .es-logo-img {
+        height: 42px;
+        object-fit: cover;
     }
 
     .es-product-wrapper {
@@ -128,7 +204,6 @@
     .es-product-title {
         font-weight: 500;
         margin-bottom: 10px;
-        height: 46px;
         overflow: hidden;
     }
 
@@ -139,16 +214,18 @@
     .es-row-img {
         position: relative;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .about-title {
+        margin-bottom: 30px;
         font-size: 24px;
         line-height: 28px;
     }
 
     .icon-wrapper-lg {
-        padding-left: 15px;
+        margin-bottom: 20px;
+        margin-top: 0px;
     }
 
     .footer-wrapper {
@@ -172,6 +249,15 @@
 
     .footer-links li {
         margin-bottom: 15px;
+    }
+
+    .es-footer-copyright {
+        margin-bottom: 10px;
+    }
+
+    .social-container svg {
+        margin-left: 0px;
+        margin-right: 10px;
     }
 
     .contact-footer {
@@ -227,10 +313,6 @@
 
     .es-pv-wrapper {
         padding-left: 15px;
-    }
-
-    .section-title {
-        text-align: start;
     }
 
     .btn-sm {

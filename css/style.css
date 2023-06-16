@@ -89,7 +89,7 @@ p {
 }
 
 .navbar {
-    padding: 0.5rem 0rem;
+    padding: 17px 0;
 }
 
 .ec-breadcrumb .breadcrumb-item.active {
@@ -105,10 +105,19 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    font-family: 'New York Large';
 }
 
 .es-header-nav a:hover {
     color: var(--main-color);
+}
+
+.navbar-nav a:hover svg {
+    fill: var(--main-color);
+}
+
+.navbar-nav a:hover svg path {
+    stroke: #FFFFFF;
 }
 
 .contact-nav a {
@@ -119,6 +128,7 @@ p {
 }
 
 .contact-nav p {
+    font-family: 'TT Ramillas';
     font-style: italic;
     font-weight: 400;
     font-size: 14px;
@@ -129,18 +139,37 @@ p {
     position: relative;
 }
 
-.img-wrapper {
+.img-container {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 240px;
+}
+
+.img-wrapper-inner {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 
-.img-wrapper:after {
+.img-wrapper-inner:after {
     content: "";
     display: block;
     padding-bottom: 100%;
+}
+
+.img-wrapper-inner::before {
+    content: " ";
+    border: 1px solid #3B1E1C;
+    transform: rotate(45deg);
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    overflow: visible;
+    opacity: 0.2;
 }
 
 .es-carusel-img {
@@ -227,10 +256,26 @@ p {
     color: #FFFFFF;
 }
 
-.btn-cart-light {
-    border: 1px solid var(--border-color);
+.btn-cart-modal {
+    border: 1px solid var(--main-color);
     border-radius: 0;
-    padding: 12px 71px;
+    width: 340px;
+    color: var(--main-color);
+    font-weight: 500;
+    margin-top: 40px;
+    padding: 12px 0;
+}
+
+.btn-cart-modal:hover {
+    background-color: #3B1E1C;
+    color: #FFFFFF;
+}
+
+.btn-cart-light {
+    font-family: 'New York Large';
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+    padding: 12px 66px;
     color: #FFFFFF;
     font-weight: 500;
 }
@@ -297,19 +342,24 @@ button:focus {
 }
 
 .es-product-title {
+    font-family: 'New York Large';
     font-weight: 500;
     margin-bottom: 10px;
-    height: 2rem;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
 }
 
 .es-pro-price {
+    font-family: 'New York Large';
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 .es-btn-cart {
-    border: 1px solid var(--border-color);
+    font-family: 'New York Large';
+    border: 1px solid var(--main-color);
     border-radius: 0;
     padding: 7px 31px;
     color: var(--main-color);
@@ -331,6 +381,7 @@ button:focus {
     line-height: 76px;
     color: #FFFFFF;
     margin-bottom: 30px;
+    font-family: 'New York Large';
 }
 
 .es-carusel-info {
@@ -355,12 +406,14 @@ ul {
 }
 
 .footer-content {
+    font-family: 'New York';
     margin-top: 40px;
     font-style: italic;
     font-weight: 400;
 }
 
 .footer-item {
+    font-family: 'New York Large';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -368,6 +421,7 @@ ul {
 }
 
 .footer-links li {
+    font-family: 'New York Large';
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -381,6 +435,7 @@ ul {
 }
 
 .contact-number a {
+    font-family: 'New York Large';
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
@@ -392,14 +447,23 @@ ul {
 }
 
 .contact-info {
+    font-family: 'TT Ramillas';
     font-style: italic;
     font-weight: 400;
     line-height: 22px;
     margin-bottom: 30px;
 }
 
-.social-container img {
+.social-container svg {
     margin-left: 20px;
+}
+
+.social-container svg:hover {
+    fill: var(--main-color);
+}
+
+.social-container svg:hover path {
+    stroke: #FFFFFF;
 }
 
 .es-footer-bottom {
@@ -433,7 +497,7 @@ ul {
 }
 
 .carousel-indicators {
-    margin-left: 10%;
+    margin-bottom: 30px;
     justify-content: center;
 }
 
@@ -486,6 +550,16 @@ ul {
     transform: rotate(45deg);
 }
 
+.carousel-control-prev span:hover, 
+.carousel-control-next span:hover {
+    background-color: #FFFFFF;
+}
+
+.carousel-control-prev span:hover path, 
+.carousel-control-next span:hover path {
+    stroke: var(--main-color);
+}
+
 .carousel-title {
     font-weight: 600;
     font-size: 64px;
@@ -495,6 +569,7 @@ ul {
 }
 
 .carousel-info {
+    font-family: 'New York';
     font-style: italic;
     font-weight: 496;
     font-size: 20px;
@@ -520,7 +595,7 @@ ul {
 }
 
 .es-carousel-content {
-    width: 670px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,15 +603,19 @@ ul {
 
 .menu-content-wrapper {
     max-width: 340px;
-    margin-left: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu-item {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 
 .menu-type {
+    font-family: 'New York Large';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -547,6 +626,7 @@ ul {
 }
 
 .menu-type-desc {
+    font-family: 'New York';
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
@@ -557,6 +637,7 @@ ul {
 }
 
 .menu-link {
+    font-family: 'New York Large';
     font-weight: 500;
     line-height: 19px;
     color: #3B1E1C;
@@ -577,10 +658,18 @@ ul {
     align-items: center;
 }
 
+.es-icon-wrapper {
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
 .icon-container {
     border: 1px solid var(--main-color);
     transform: rotate(45deg);
-    margin-right: 15px;
     min-width: 36px;
     min-height: 36px;
     display: flex;
@@ -588,10 +677,17 @@ ul {
     justify-content: center;
 }
 
+.icon-container:hover {
+    background-color: var(--main-color);
+}
+
+.icon-container:hover svg path {
+    stroke: #FFFFFF;
+}
+
 .icon-container-lg {
     border: 1px solid var(--main-color);
     transform: rotate(45deg);
-    margin-right: 15px;
     min-height: 60px;
     min-width: 60px;
     display: flex;
@@ -599,8 +695,22 @@ ul {
     justify-content: center;
 }
 
-.icon-container img,
-.icon-container-lg img {
+.icon-container-lg:hover {
+    background-color: var(--main-color);
+}
+
+.icon-container-lg:hover svg path {
+    stroke: #FFFFFF;
+}
+
+.links {
+    font-family: 'New York Large';
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.icon-container svg,
+.icon-container-lg svg {
     transform: rotate(-45deg);
 }
 
@@ -612,17 +722,23 @@ ul {
 }
 
 .booking-form {
-    width: 50%;
-    padding: 40px 80px;
+    width: 940px;
+    padding: 50px 100px;
     background-color: #FFFFFF;
 }
 
 .booking-desc {
+    font-family: 'New York';
     font-style: italic;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.booking-form-header {
+    max-width: 500px;
+    margin: auto;
 }
 
 .es-form-control {
@@ -638,6 +754,7 @@ ul {
 }
 
 .booking-guide {
+    font-family: 'New York';
     font-style: italic;
     font-weight: 400;
     line-height: 20px;
@@ -645,13 +762,23 @@ ul {
     color: #ACACAC;
 }
 
+.es-main-form {
+    width: 340px;
+}
+
 .booking-guide span {
     color: var(--main-color);
 }
 
+.es-form-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .icon-wrapper {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .icon-wrapper-lg {
@@ -682,18 +809,39 @@ ul {
 }
 
 .about-title {
+    margin-bottom: 40px;
     font-weight: 500;
     font-size: 36px;
     line-height: 43px;
     color: var(--main-color);
+    font-family: 'New York Large';
 }
 
 .about-content {
+    font-family: 'New York';
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
     line-height: 110%;
     margin-bottom: 10px;
+}
+
+.about-content-wrapper {
+    padding: 80px 0;
+}
+
+.es-about-banner {
+    height: 700px;
+    object-fit: cover;
+}
+
+.es-icon-wrapper-lg {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 .section-wrp {
@@ -757,6 +905,33 @@ ul {
     width: 25px;
     height: 25px;
     transform: rotate(45deg);
+}
+
+.btn-icon-modal {
+    border: 1px solid var(--main-color);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+}
+
+.btn-icon-modal svg {
+    transform: rotate(-45deg);
+}
+
+.btn-icon-modal svg path {
+    stroke: var(--main-color);
+}
+
+.btn-icon-modal:hover {
+    background-color: var(--main-color);
+}
+
+.btn-icon-modal:hover svg path {
+    stroke: #FFFFFF;
 }
 
 .es-ch-action .btn-icon img {
@@ -987,7 +1162,7 @@ input[type="radio"]::before {
     border-left: none;
     border-right: none;
     border-radius: 0;
-    padding-left: 0;
+    padding: 29px 0;
 }
 
 .es-pv-checklist  {
@@ -1213,10 +1388,6 @@ input[type="radio"]::before {
     margin-bottom: 240px;
     margin-top: 100px;
 }
-
-
-
-
 
 .es-tabs {
     display: flex;
@@ -1445,6 +1616,7 @@ input[type="radio"]::before {
     text-align: start;
     padding-left: 0;
     position: relative;
+    font-family: 'New York Large';
 }
 
 .dropright .dropdown-toggle::after {
@@ -1467,7 +1639,7 @@ input[type="radio"]::before {
 
 .modal-dialog-full .modal-header {
     background-color: #FFFFFF;
-    padding: 0.75rem 15px;
+    padding: 1px 15px;
     border-radius: 0;
     align-items: center;
 }
@@ -1538,4 +1710,33 @@ input[type="radio"]::before {
 .es-btn-primary:hover::after {
     transform: scale(1,1);
     transform-origin: bottom left;
+}
+
+.es-modal-header {
+    border-bottom: none;
+    display: flex;
+    justify-content: end;
+}
+
+
+.es-modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.es-modal-content {
+    width: 460px;
+    height: 380px;
+}
+
+.es-modal-body-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.es-modal-content-two {
+    width: 460px;
+    height: 692px;
 }
