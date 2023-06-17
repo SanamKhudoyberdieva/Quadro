@@ -47,7 +47,7 @@
                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">
+                            <a class="btn nav-link" href="#" data-toggle="modal" data-target="#registrationModal">
                                 <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_201_3248)">
                                     <rect x="25.4561" y="0.707107" width="35" height="35" transform="rotate(45 25.4561 0.707107)" stroke="#3B1E1C"/>
@@ -64,7 +64,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn nav-link" href="#" data-toggle="modal" data-target="#registrationModal">
+                            <a class="nav-link" href="#">
                                 <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_201_3257)">
                                     <rect x="26.3677" y="0.707107" width="35" height="35" transform="rotate(45 26.3677 0.707107)" stroke="#3B1E1C"/>
@@ -77,7 +77,7 @@
                                     </clipPath>
                                     </defs>
                                 </svg>
-                            </button>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
@@ -231,7 +231,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -249,7 +249,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -267,7 +267,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -285,7 +285,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -303,7 +303,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -321,7 +321,7 @@
                         <div class="menu-item">
                             <div class="img-container">
                                 <div class="img-wrapper-inner">
-                                    <a href="#">
+                                    <a class="img-link" href="#">
                                         <img src="img/menu_1.jpg" class="img-fluid" alt="menu">
                                     </a>
                                 </div>
@@ -366,7 +366,7 @@
                                 <input type="name" class="form-control main-form-control " id="InputName" placeholder="* Имя">
                             </div>
                             <div class="form-group es-main-form">
-                                <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
+                                <input type="text" class="form-control main-form-control " id="InputPhoneNumber" data-plugin="phone-mask" placeholder="* Номер телефона">
                             </div>
                             <div class="form-group es-main-form">
                                 <input type="date" class="form-control main-form-control " id="InputDate" placeholder="* Дата и время">
@@ -766,7 +766,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="icon-wrapper-lg m-0">
+                                        <div class="icon-wrapper-lg">
                                             <a href="#" class="links">
                                                 <div class="es-icon-wrapper-lg">
                                                     <div class="icon-container-lg">
@@ -799,11 +799,11 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-logo-wrp">
-                        <img src="img/logo_footer.svg" alt="logo" class="img-fluid">
+                        <img src="img/logo_footer.svg" alt="logo" class="img-fluid footer-sm-logo">
                     </div>
                     <div class="footer-content">Противоположная точка зрения подразумевает, что сторонники тоталитаризма в науке лишь добавляют фракционных разногласий и обнародованы.</div>
                 </div>
-                <div class="col-md-2 footer-nav">
+                <div class="col-md-2 footer-nav footer-nav-sm">
                     <ul class="footer-links">
                         <div class="footer-item">Категории</div>
                         <li class="footer-link">
@@ -826,7 +826,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 footer-nav">
+                <div class="col-md-2 footer-nav footer-nav-sm">
                     <ul class="footer-links">
                         <div class="footer-item">Ссылки</div>
                         <li class="footer-link">
@@ -913,13 +913,45 @@
         </div>
     </footer>
 
+    <!-- Mobile Tabs -->
+    <div class="mobile-nav d-lg-none">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/ru">
+                <img
+                    src="/img/ic_main_active.svg"/>
+                <span class="menu-title">Главная</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ru/menu">
+                <img src="/img/ic_menu_mini.svg"/>
+                <span class="menu-title">Меню</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ru/cart">
+                <img
+                    src="/img/ic_cart_mini.svg"/>
+                <span class="menu-title">Корзина</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" data-target="#authModal" data-toggle="modal" href="#">
+                    <img src="/img/ic_profile_mini.svg"/>
+                    <span class="menu-title">Профиль</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <!-- Menu Modal -->
     <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-full">
+    <div class="modal-dialog-scrollable">
         <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header es-menu-modal-header">
             <a class="navbar-logo es-logo" href="#">
-                <img src="img/logo_header.png" class="img-fluid" alt="logo">
+                <img src="img/logo_header.png" class="img-fluid es-logo-img" alt="logo">
             </a>
             <div class="navbar-wrp-sm">
                 <ul class="navbar-nav">
@@ -941,42 +973,44 @@
                 </ul>
             </div>
         </div>
-        <div class="modal-body">
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Основные блюда
-                </button>
-                <div class="dropdown-menu"></div>
-            </div>
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Японская кухня
-                </button>
-                <div class="dropdown-menu"></div>
-            </div>
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Десерты
-                </button>
-                <div class="dropdown-menu"></div>
-            </div>
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Лимонады
-                </button>
-                <div class="dropdown-menu"></div>
-            </div>
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Чаи
-                </button>
-                <div class="dropdown-menu"></div>
-            </div>
-            <div class="btn-group dropright es-dropdown-wrp">
-                <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Б.А коктейли
-                </button>
-                <div class="dropdown-menu"></div>
+        <div class="modal-body es-menu-modal-body">
+            <div class="dropdowns-sm-wrapper">
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Основные блюда
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Японская кухня
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Десерты
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Лимонады
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Чаи
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
+                <div class="btn-group dropright es-dropdown-wrp">
+                    <button type="button" class="btn es-btn-dropdown dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Б.А коктейли
+                    </button>
+                    <div class="dropdown-menu"></div>
+                </div>
             </div>
             <ul class="footer-links">
                 <li class="footer-link">
@@ -1025,61 +1059,59 @@
     </div>
 
     <!-- Registration Modal -->
-    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade p-0" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered es-modal-center">
             <div class="modal-content es-modal-content">
                 <div class="modal-header es-modal-header">
                     <button class="btn btn-icon-modal" class="close" data-dismiss="modal" aria-label="Close"> 
-                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 0L38 19L19 38L0 19L19 0Z" fill="#3B1E1C"/>
-                            <path d="M14.0382 24.6C13.8749 24.6 13.7116 24.5375 13.5865 24.4137C13.3377 24.1649 13.3377 23.7605 13.5865 23.5117L23.5112 13.5879C23.76 13.3391 24.1645 13.3391 24.4133 13.5879C24.6621 13.8367 24.6621 14.2411 24.4133 14.4899L14.4886 24.4137C14.3649 24.5375 14.2015 24.6 14.0382 24.6Z" fill="#FEF3E1"/>
-                            <path d="M23.9629 24.6C23.7995 24.6 23.6362 24.5375 23.5112 24.4137L13.5865 14.4886C13.3377 14.2398 13.3377 13.8354 13.5865 13.5866C13.8353 13.3378 14.2398 13.3378 14.4886 13.5866L24.4133 23.5104C24.6621 23.7592 24.6621 24.1636 24.4133 24.4124C24.2895 24.5375 24.1262 24.6 23.9629 24.6Z" fill="#FEF3E1"/>
-                        </svg>                            
+                        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_103_5511)">
+                            <rect x="15" y="0.707107" width="19" height="19" transform="rotate(45 15 0.707107)" stroke="#3B1E1C"/>
+                            <rect x="15" y="28" width="20" height="20" transform="rotate(45 15 28)" fill="#3B1E1C"/>
+                            <path d="M12 17.1426L18 11.1426" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 17.1426L12 11.1426" stroke="#3B1E1C" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_103_5511">
+                            <rect width="20" height="20" fill="white" transform="translate(15) rotate(45)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                           
                     </button>
                 </div>
                 <div class="modal-body es-modal-body">
-                    <img class="es-order-complete-logo" src="img/ic_logo.svg" alt="logo">
-                    <div class="form-group es-main-form">
-                        <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
+                    <div class="logo-modal-wrapper">
+                        <img class="es-order-complete-logo" src="img/ic_logo.svg" alt="logo">
                     </div>
-                    <button class="btn btn-cart-modal" href="#"  data-target="#registrationModaltwo" data-toggle="modal" >Далее</button>
+                    <div class="gender-wrp">
+                        <label class="control-label es-control-label">Выберите способ оплаты</label>
+                        <input type="hidden" name="OrderForm[gender]" value="">
+                        <div id="orderform-payment" class="es-pv-checklist" role="radiogroup">
+                            <label class="radio-label"><input type="radio" name="OrderForm[gender]" value="male">Мужской</label>
+                            <label class="radio-label"><input type="radio" name="OrderForm[gender]" value="female">Женский</label>
+                        </div>
+                    </div>
+                    <div class="es-form-modal-wrp">
+                        <div class="form-group es-form-modal">
+                            <input type="text" class="form-control main-form-control " id="InputNameModal" placeholder="* Ваше имя">
+                        </div>
+                        <div class="form-group es-form-modal">
+                            <input type="date" class="form-control main-form-control " id="InputDateModal" placeholder="* Дата рождения">
+                        </div>
+                        <div class="form-group es-form-modal">
+                            <input type="text" class="form-control main-form-control " name="OrderForm[phone]" id="InputPhoneNumberModal" data-plugin="phone-mask" placeholder="+99890 990 90 90">
+                        </div>
+                        <div class="form-group es-form-modal">
+                            <input type="password" class="form-control main-form-control " id="InputCodeModal" placeholder="* Введите код">
+                        </div>
+                    </div>
+                    <button class="btn btn-cart-modal" href="#" >Далее</button>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Registration Modal two-->
-    <div class="modal fade" id="registrationModaltwo" tabindex="-1" aria-labelledby="registrationModaltwoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content es-modal-content-two">
-                <div class="modal-header es-modal-header">
-                    <button class="btn btn-icon-modal" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 0L38 19L19 38L0 19L19 0Z" fill="#3B1E1C"/>
-                            <path d="M14.0382 24.6C13.8749 24.6 13.7116 24.5375 13.5865 24.4137C13.3377 24.1649 13.3377 23.7605 13.5865 23.5117L23.5112 13.5879C23.76 13.3391 24.1645 13.3391 24.4133 13.5879C24.6621 13.8367 24.6621 14.2411 24.4133 14.4899L14.4886 24.4137C14.3649 24.5375 14.2015 24.6 14.0382 24.6Z" fill="#FEF3E1"/>
-                            <path d="M23.9629 24.6C23.7995 24.6 23.6362 24.5375 23.5112 24.4137L13.5865 14.4886C13.3377 14.2398 13.3377 13.8354 13.5865 13.5866C13.8353 13.3378 14.2398 13.3378 14.4886 13.5866L24.4133 23.5104C24.6621 23.7592 24.6621 24.1636 24.4133 24.4124C24.2895 24.5375 24.1262 24.6 23.9629 24.6Z" fill="#FEF3E1"/>
-                        </svg>                         
-                    </button>
-                </div>
-                <div class="modal-body es-modal-body-two">
-                    <img class="es-order-complete-logo" src="img/ic_logo.svg" alt="logo">
-                    <div class="form-group es-main-form">
-                        <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
-                    </div>
-                    <div class="form-group es-main-form">
-                        <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
-                    </div>
-                    <div class="form-group es-main-form">
-                        <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
-                    </div>
-                    <div class="form-group es-main-form">
-                        <input type="phoneNumber" class="form-control main-form-control " id="InputPhoneNumber" placeholder="* Номер телефона">
-                    </div>
-                    <button class="btn btn-cart-modal" href="#"  data-target="#menuModaltwo" data-toggle="modal" >Далее</button>
-                </div>
-                </div>
-        </div>
-    </div>
+    
 
     <script src="js/jquery.min.js"></script>
     <script src="js/poper.min.js"></script>

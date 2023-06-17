@@ -22,7 +22,7 @@
     }
 
     .main-header .navbar {
-        padding: 1px 20px;
+        padding: 1px 15px;
     }
 
     .navbar-wrp-sm {
@@ -156,7 +156,12 @@
 
     .links-container {
         justify-content: start;
-        margin-left: 20px;
+        margin-left: 15px;
+    }
+
+    .btn-favourite svg {
+        width: 36px;
+        height: 36px;
     }
 
     .booking-form {
@@ -223,9 +228,17 @@
         line-height: 28px;
     }
 
+    .about-content {
+        margin-bottom: 30px;
+    }
+
     .icon-wrapper-lg {
         margin-bottom: 20px;
         margin-top: 0px;
+    }
+
+    .footer-sm-logo {
+        height: 67px;
     }
 
     .footer-wrapper {
@@ -234,11 +247,16 @@
 
     .footer-content {
         margin-top: 30px;
+        margin-bottom: 40px;
     }
 
     .footer-nav {
         align-items: flex-start;
-        margin-top: 30px;
+        margin-top: 0px;
+    }
+
+    .es-menu-modal-header {
+        padding-bottom: 0;
     }
 
     .footer-item {
@@ -247,12 +265,20 @@
         line-height: 24px;
     }
 
+    .footer-links {
+        margin-bottom: 40px;
+    }
+
     .footer-links li {
         margin-bottom: 15px;
     }
 
     .es-footer-copyright {
         margin-bottom: 10px;
+    }
+
+    .social-container {
+        margin-bottom: 20px;
     }
 
     .social-container svg {
@@ -313,6 +339,26 @@
 
     .es-pv-wrapper {
         padding-left: 15px;
+        margin-bottom: 50px;
+    }
+
+    .img-carusel-arrow {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slick-prev {
+        top: -60px;
+        right: 50px;
+    }
+
+    .section-title-sm {
+        text-align: start !important;
+    }
+
+    .slick-next {
+        top: -60px;
+        right: 10px !important;
     }
 
     .btn-sm {
@@ -598,5 +644,105 @@
         padding: 0;
     }
 
+    .es-modal-content {
+        width: 320px;
+        height: 720px;
+    }
+
+    .es-modal-body {
+        padding: 0;
+        padding: 5px 20px 50px 20px;
+    }
+
+    .es-form-modal {
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .btn-cart-modal {
+        width: 280px;
+    }
+
+    .logo-modal-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .es-form-modal-wrp {
+        margin-bottom: 30px;
+    }
+
+    .es-modal-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-nav .nav-link {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .pro-view-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .pv-image-wrapper {
+        width: 320px;
+        height: 320px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .pv-image .img-wrapper::before {
+        height: 230px;
+        width: 230px;
+    }
+
+    .pv-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-pv {
+        top: 14% !important;
+        right: 16% !important;
+    }
+
+    .es-nav-tabs .nav-link {
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 25px;
+        padding: auto;
+        /* min-width: 140px; */
+    }
+
+    .discount-date {
+        min-height: 50px;
+        min-width: 50px;
+    }
+
+    .es-profile-actions {
+        margin-bottom: 50px;
+    }
+
+    .es-map-btn {
+        margin-bottom: 30px;
+    }
+
+    .es-nav-tabs {
+        margin-bottom: 0px;
+        flex-wrap: nowrap;
+    }
+
+    .es-tb-nav-wrapper {
+        display: flex;
+        overflow-x: scroll;
+        margin-bottom: 30px;
+    }
+
+    .es-nav-pills {
+        margin-bottom: 30px;
+    }
+    
 
 }
