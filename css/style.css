@@ -144,6 +144,7 @@ p {
     align-items: center;
     justify-content: center;
     min-width: 240px;
+    min-height: 240px;
 }
 
 .pv-image-wrapper {
@@ -949,6 +950,14 @@ ul {
     transform: rotate(45deg);
 }
 
+.es-ch-action .btn-icon:hover svg {
+    fill: var(--main-color) !important;
+}
+
+.es-ch-action .btn-icon:hover svg path {
+    stroke: #FFFFFF !important;
+}
+
 .btn-icon-modal:hover svg {
     fill: var(--main-color);
 }
@@ -957,7 +966,7 @@ ul {
     stroke: #FFFFFF;
 }
 
-.es-ch-action .btn-icon img {
+.es-ch-action .btn-icon svg {
     transform: rotate(-45deg);
 }
 
@@ -1221,7 +1230,7 @@ input[type="radio"]::before {
 }
 
 .es-404-img {
-    margin-bottom: 1.25rem;
+    margin-bottom: 60px;
 }
 
 .btn-primary:hover {
@@ -1342,7 +1351,7 @@ input[type="radio"]::before {
 }
 
 .es-history {
-    padding: 0 3rem;
+    padding-left: 3rem;
 }
 
 .es-history-title {
@@ -1377,8 +1386,8 @@ input[type="radio"]::before {
 .es-order-complete {
     border: 1px solid var(--border-color);
     text-align: center;
-    width: 500px;
-    height: 500px;
+    width: 460px;
+    height: 460px;
     transform: rotate(45deg);
     display: flex;
     justify-content: center;
@@ -1423,11 +1432,12 @@ input[type="radio"]::before {
 .order-complete-wrp {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 700px;
 }
 
 .order-complete {
     margin-bottom: 240px;
-    margin-top: 100px;
 }
 
 .es-tabs {

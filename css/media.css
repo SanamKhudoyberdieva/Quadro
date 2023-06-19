@@ -123,6 +123,7 @@
         margin-left: 20px;
         height: 150px;
         margin-bottom: 12px;
+        min-height: 150px;
     }
 
     .img-wrapper-inner {
@@ -713,7 +714,7 @@
         line-height: 21px;
         margin-right: 25px;
         padding: auto;
-        /* min-width: 140px; */
+        white-space: nowrap;
     }
 
     .discount-date {
