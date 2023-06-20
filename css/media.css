@@ -64,6 +64,10 @@
         width: 100px;
     }
 
+    .es-form-group {
+        margin-bottom: 50px;
+    }
+
     .booking-desc {
         margin-bottom: 30px;
     }
@@ -124,6 +128,11 @@
         height: 150px;
         margin-bottom: 12px;
         min-height: 150px;
+    }
+
+    .sm-img-wrp {
+        width: 320px;
+        height: 320px;
     }
 
     .img-wrapper-inner {
